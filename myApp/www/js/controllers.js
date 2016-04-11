@@ -47,6 +47,25 @@ angular.module('starter.controllers', [])
     ASA13G: 'Pt received a planned trial of extubation'
   }
 
+  $scope.ASA14 = {
+    ASA14H: 'Pt assessed for pain in PACU',
+    ASA14B: 'Initial pain score < 7 out of 10',
+    ASA14A: 'Initial pain score >= 7 out of 10'
+  }
+
+  $scope.ASA20 = {
+    ASA20C: 'Pt underwent a surgical procedure under general anesthesia',
+    ASA20A: 'All applicable safety checks performed before induction of anesthesia',
+    ASA20B: 'All applicable safety checks NOT performed before induction of anesthesia'
+  }
+
+  $scope.ASA35 = {
+    ASA35A: 'Elective surgical procedure to be performed under anesthesia',
+    ASA35B: 'Patient arrived at the facility',
+    ASA35C: 'Elective surgical procedure was cancelled for any reason on the day of surgery after patient arrived at the facility',
+    ASA35D: 'Elective surgical procedure was not cancelled'
+  }
+
 })
 
 

@@ -115,5 +115,57 @@
   </div>
 
 
+  <ion-list>
+
+    <ion-item class='item item-text-wrap'>ASA 14: Short Term Pain Management (Age 10 and over; Check all that apply) </ion-item>
+
+  </ion-list>
+
+  <div ng-repeat='(name, value) in ASA14'>
+
+    <label class='item item-input'>
+
+      <ion-checkbox class='item item-text-wrap'>{{name}}: {{value}}</ion-checkbox>
+
+    </label>
+
+  </div>
+
+
+  <ion-list>
+
+    <ion-item class='item item-text-wrap'>ASA 20: Surgical Safety Checklist (Check all that apply) </ion-item>
+
+  </ion-list>
+
+  <div ng-repeat='(name, value) in ASA20'>
+
+    <label class='item item-input'>
+
+      <ion-checkbox class='item item-text-wrap'>{{name}}: {{value}}</ion-checkbox>
+
+    </label>
+
+  </div>
+
+
+  <ion-list>
+
+    <ion-item class='item item-text-wrap'>ASA 35: Day of Surgery Case Cancellation Rate (Check all that apply) </ion-item>
+
+  </ion-list>
+
+  <div ng-repeat='(name, value) in ASA35'>
+
+    <label class='item item-input'>
+
+      <ion-checkbox class='item item-text-wrap'>{{name}}: {{value}}</ion-checkbox>
+
+    </label>
+
+  </div>
+
+
+
 
 </ion-view>
