@@ -4,48 +4,61 @@
 
   <ion-content>
 
-  <label class='item item-input'>
+    <label class='item item-input'>
 
-    <span class='input-label'> Anesthesiologist: </span>
+      <span class='input-label'> Anesthesiologist: </span>
 
-    <input type='text' name='first'>
+      <input type='text' name='first'>
 
-  </label>
-
-
-  <label class='item item-input'>
-
-    <span class='input-label'> CRNA/AA: </span>
-
-    <input type='text' name='first'>
-
-  </label>
-
-  <label class='item item-input'>
-
-    <span class='input-label'> Patient: </span>
-
-    <input type='text' name='patient'>
-
-  </label>
+    </label>
 
 
-  <label class='item item-input'>
+    <label class='item item-input'>
 
-    <span class='input-label'> Date Of Service: </span>
+      <span class='input-label'> CRNA/AA: </span>
 
-    <input type='date' name='dos'>
+      <input type='text' name='first'>
 
-  </label>
+    </label>
+
+    <label class='item item-input'>
+
+      <span class='input-label'> Patient: </span>
+
+      <input type='text' name='patient'>
+
+    </label>
 
 
-  <label class='item item-input'>
+    <label class='item item-input'>
 
-    <span class='input-label'> MRN: </span>
+      <span class='input-label'> Date Of Service: </span>
 
-    <input type='text' name='first'>
+      <input type='date' name='dos'>
 
-  </label>
+    </label>
+
+
+    <label class='item item-input'>
+
+      <span class='input-label'> MRN: </span>
+
+      <input type='text' name='first'>
+
+    </label>
+
+
+    <label class='item item-input'>
+
+      <span class='input-label'> ASA 10: Composite Anesthesia Safety </span>
+
+        <div ng-repeat='(name, value) in ASA10'>
+
+          <ion-radio ng-model='isChecked' >{{value}}</ion-radio>
+
+        </div>
+
+    </label>
 
   </ion-content>
 

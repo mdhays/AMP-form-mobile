@@ -24,7 +24,28 @@ angular.module('starter.controllers', [])
 // Added for the form view.
 .controller('NewCaseCtrl', function($scope) {
 
+  $scope.checkChanged = function(item){
+    if(item.winner) $scope.checked++;
+    else $scope.checked--;
+  }
+
+  $scope.ASA10 = {
+    ASA10A: 'No serious adverse event',
+    ASA10B: 'Serious adverse event'
+  }
+
+  $scope.ASA11 = {
+    ASA11A: 'PT experienced cardiac arrest',
+    ASA11B: 'No cardiac arrest'
+  }
+
 })
+
+
+
+
+
+
 
 .controller('AccountCtrl', function($scope) {
   $scope.settings = {
