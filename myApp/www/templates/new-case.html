@@ -48,18 +48,72 @@
     </label>
 
 
-    <label class='item item-input'>
+    <ion-list>
 
-      <span class='input-label'> ASA 10: Composite Anesthesia Safety </span>
+      <ion-item class='item item-text-wrap'> ASA 10: Composite Anesthesia Safety </ion-item>
 
-        <div ng-repeat='(name, value) in ASA10'>
+     </ion-list>
 
-          <ion-radio ng-model='isChecked' >{{value}}</ion-radio>
+    <div ng-repeat='(name, value) in ASA10'>
 
-        </div>
+      <label class='item item-input'>
+
+          <ion-radio>{{name}}: {{value}}</ion-radio>
 
     </label>
 
-  </ion-content>
+  </div>
+
+    <ion-list>
+
+      <ion-item class='item item-text-wrap'> ASA 11: Perioperative Cardiac Arrest (in the O.R or PACU) </ion-item>
+
+    </ion-list>
+
+    <div ng-repeat='(name, value) in ASA11'>
+
+      <label class='item item-input'>
+
+          <ion-radio class='item item-text-wrap'>{{name}}: {{value}}</ion-radio>
+
+    </label>
+
+
+  </div>
+
+      <ion-list>
+
+        <ion-item class='item item-text-wrap'> ASA 12: Perioperative Mortality (in the O.R or PACU) </ion-item>
+
+     </ion-list>
+
+    <div ng-repeat='(name, value) in ASA12'>
+
+      <label class='item item-input'>
+
+          <ion-radio class='item item-text-wrap'>{{name}}: {{value}}</ion-radio>
+
+    </label>
+
+  </div>
+
+
+  <ion-list>
+
+    <ion-item class='item item-text-wrap'>ASA 13: PACU Reintubation Rate (Check all that apply) </ion-item>
+
+  </ion-list>
+
+  <div ng-repeat='(name, value) in ASA13'>
+
+    <label class='item item-input'>
+
+      <ion-checkbox class='item item-text-wrap'>{{name}}: {{value}}</ion-checkbox>
+
+    </label>
+
+  </div>
+
+
 
 </ion-view>
