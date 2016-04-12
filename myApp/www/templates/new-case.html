@@ -21,6 +21,7 @@
 
     </label>
 
+
     <label class='item item-input'>
 
       <span class='input-label'> Patient: </span>
@@ -52,59 +53,127 @@
 
       <ion-item class='item item-text-wrap'> ASA 10: Composite Anesthesia Safety </ion-item>
 
-     </ion-list>
+    </ion-list>
 
     <div ng-repeat='(name, value) in ASA10'>
 
       <label class='item item-input'>
 
-          <ion-radio class='item item-text-wrap' name='ASA10'>{{name}}: {{value}}</ion-radio>
+            <ion-radio class='item item-text-wrap' name='ASA10'>{{name}}: {{value}}</ion-radio>
 
-    </label>
+      </label>
 
-  </div>
-
-    <ion-list>
-
-      <ion-item class='item item-text-wrap'> ASA 11: Perioperative Cardiac Arrest (in the O.R or PACU) </ion-item>
-
-    </ion-list>
-
-    <div ng-repeat='(name, value) in ASA11'>
-
-      <label class='item item-input'>
-
-          <ion-radio class='item item-text-wrap' name='ASA11'>{{name}}: {{value}}</ion-radio>
-
-    </label>
-
-
-  </div>
+    </div>
 
       <ion-list>
 
-        <ion-item class='item item-text-wrap'> ASA 12: Perioperative Mortality (in the O.R or PACU) </ion-item>
+        <ion-item class='item item-text-wrap'> ASA 11: Perioperative Cardiac Arrest (in the O.R or PACU) </ion-item>
 
-     </ion-list>
+      </ion-list>
 
-    <div ng-repeat='(name, value) in ASA12'>
+      <div ng-repeat='(name, value) in ASA11'>
+
+        <label class='item item-input'>
+
+            <ion-radio class='item item-text-wrap' name='ASA11'>{{name}}: {{value}}</ion-radio>
+
+        </label>
+
+
+      </div>
+
+        <ion-list>
+
+          <ion-item class='item item-text-wrap'> ASA 12: Perioperative Mortality (in the O.R or PACU) </ion-item>
+
+       </ion-list>
+
+      <div ng-repeat='(name, value) in ASA12'>
+
+        <label class='item item-input'>
+
+            <ion-radio class='item item-text-wrap' name='ASA12'>{{name}}: {{value}}</ion-radio>
+
+      </label>
+
+    </div>
+
+
+    <ion-list>
+
+      <ion-item class='item item-text-wrap'>ASA 13: PACU Reintubation Rate (Check all that apply) </ion-item>
+
+    </ion-list>
+
+    <div ng-repeat='(name, value) in ASA13'>
 
       <label class='item item-input'>
 
-          <ion-radio class='item item-text-wrap' name='ASA12'>{{name}}: {{value}}</ion-radio>
+        <ion-checkbox class='item item-text-wrap'>{{name}}: {{value}}</ion-checkbox>
 
-    </label>
+      </label>
 
-  </div>
+    </div>
+
+
+    <ion-list>
+
+      <ion-item class='item item-text-wrap'>ASA 14: Short Term Pain Management (Age 10 and over; Check all that apply) </ion-item>
+
+    </ion-list>
+
+    <div ng-repeat='(name, value) in ASA14'>
+
+      <label class='item item-input'>
+
+        <ion-checkbox class='item item-text-wrap'>{{name}}: {{value}}</ion-checkbox>
+
+      </label>
+
+    </div>
+
+
+    <ion-list>
+
+      <ion-item class='item item-text-wrap'>ASA 20: Surgical Safety Checklist (Check all that apply) </ion-item>
+
+    </ion-list>
+
+    <div ng-repeat='(name, value) in ASA20'>
+
+      <label class='item item-input'>
+
+        <ion-checkbox class='item item-text-wrap'>{{name}}: {{value}}</ion-checkbox>
+
+      </label>
+
+    </div>
+
+
+    <ion-list>
+
+      <ion-item class='item item-text-wrap'>ASA 35: Day of Surgery Case Cancellation Rate (Check all that apply) </ion-item>
+
+    </ion-list>
+
+    <div ng-repeat='(name, value) in ASA35'>
+
+      <label class='item item-input'>
+
+        <ion-checkbox class='item item-text-wrap'>{{name}}: {{value}}</ion-checkbox>
+
+      </label>
+
+    </div>
 
 
   <ion-list>
 
-    <ion-item class='item item-text-wrap'>ASA 13: PACU Reintubation Rate (Check all that apply) </ion-item>
+    <ion-item class='item item-text-wrap'>PQRS 76: Prevention of CVC related Bloodstream Infection </ion-item>
 
   </ion-list>
 
-  <div ng-repeat='(name, value) in ASA13'>
+  <div ng-repeat='(name, value) in PQRS76'>
 
     <label class='item item-input'>
 
@@ -117,11 +186,11 @@
 
   <ion-list>
 
-    <ion-item class='item item-text-wrap'>ASA 14: Short Term Pain Management (Age 10 and over; Check all that apply) </ion-item>
+    <ion-item class='item item-text-wrap'>PQRS 404: Smoking Abstinence (Age 18 or over; Check all that apply)</ion-item>
 
   </ion-list>
 
-  <div ng-repeat='(name, value) in ASA14'>
+  <div ng-repeat='(name, value) in PQRS404'>
 
     <label class='item item-input'>
 
@@ -134,11 +203,11 @@
 
   <ion-list>
 
-    <ion-item class='item item-text-wrap'>ASA 20: Surgical Safety Checklist (Check all that apply) </ion-item>
+    <ion-item class='item item-text-wrap'>PQRS 424: Perioperative Temp. Mgmt (GA or Neuraxial; Check all that apply)</ion-item>
 
   </ion-list>
 
-  <div ng-repeat='(name, value) in ASA20'>
+  <div ng-repeat='(name, value) in PQRS424'>
 
     <label class='item item-input'>
 
@@ -151,11 +220,11 @@
 
   <ion-list>
 
-    <ion-item class='item item-text-wrap'>ASA 35: Day of Surgery Case Cancellation Rate (Check all that apply) </ion-item>
+    <ion-item class='item item-text-wrap'>PQRS 426: Transfer of Care to PACU (Check all that apply)</ion-item>
 
   </ion-list>
 
-  <div ng-repeat='(name, value) in ASA35'>
+  <div ng-repeat='(name, value) in PQRS404'>
 
     <label class='item item-input'>
 
@@ -166,90 +235,22 @@
   </div>
 
 
-<ion-list>
+  <ion-list>
 
-  <ion-item class='item item-text-wrap'>PQRS 76: Prevention of CVC related Bloodstream Infection </ion-item>
+    <ion-item class='item item-text-wrap'>PQRS 427: Post-Anesthetic Transfer of Care (Check all that apply)</ion-item>
 
-</ion-list>
+  </ion-list>
 
-<div ng-repeat='(name, value) in PQRS76'>
+  <div ng-repeat='(name, value) in PQRS427'>
 
-  <label class='item item-input'>
+    <label class='item item-input'>
 
-    <ion-checkbox class='item item-text-wrap'>{{name}}: {{value}}</ion-checkbox>
+      <ion-checkbox class='item item-text-wrap'>{{name}}: {{value}}</ion-checkbox>
 
-  </label>
+    </label>
 
-</div>
+  </div>
 
-
-<ion-list>
-
-  <ion-item class='item item-text-wrap'>PQRS 404: Smoking Abstinence (Age 18 or over; Check all that apply)</ion-item>
-
-</ion-list>
-
-<div ng-repeat='(name, value) in PQRS404'>
-
-  <label class='item item-input'>
-
-    <ion-checkbox class='item item-text-wrap'>{{name}}: {{value}}</ion-checkbox>
-
-  </label>
-
-</div>
-
-
-<ion-list>
-
-  <ion-item class='item item-text-wrap'>PQRS 424: Perioperative Temp. Mgmt (GA or Neuraxial; Check all that apply)</ion-item>
-
-</ion-list>
-
-<div ng-repeat='(name, value) in PQRS424'>
-
-  <label class='item item-input'>
-
-    <ion-checkbox class='item item-text-wrap'>{{name}}: {{value}}</ion-checkbox>
-
-  </label>
-
-</div>
-
-
-<ion-list>
-
-  <ion-item class='item item-text-wrap'>PQRS 426: Transfer of Care to PACU (Check all that apply)</ion-item>
-
-</ion-list>
-
-<div ng-repeat='(name, value) in PQRS404'>
-
-  <label class='item item-input'>
-
-    <ion-checkbox class='item item-text-wrap'>{{name}}: {{value}}</ion-checkbox>
-
-  </label>
-
-</div>
-
-
-<ion-list>
-
-  <ion-item class='item item-text-wrap'>PQRS 427: Post-Anesthetic Transfer of Care (Check all that apply)</ion-item>
-
-</ion-list>
-
-<div ng-repeat='(name, value) in PQRS427'>
-
-  <label class='item item-input'>
-
-    <ion-checkbox class='item item-text-wrap'>{{name}}: {{value}}</ion-checkbox>
-
-  </label>
-
-</div>
-
-
+  </ion-content>
 
 </ion-view>
