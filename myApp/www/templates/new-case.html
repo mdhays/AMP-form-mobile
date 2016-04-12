@@ -58,7 +58,7 @@
 
       <label class='item item-input'>
 
-          <ion-radio>{{name}}: {{value}}</ion-radio>
+          <ion-radio class='item item-text-wrap' name='ASA10'>{{name}}: {{value}}</ion-radio>
 
     </label>
 
@@ -74,7 +74,7 @@
 
       <label class='item item-input'>
 
-          <ion-radio class='item item-text-wrap'>{{name}}: {{value}}</ion-radio>
+          <ion-radio class='item item-text-wrap' name='ASA11'>{{name}}: {{value}}</ion-radio>
 
     </label>
 
@@ -91,7 +91,7 @@
 
       <label class='item item-input'>
 
-          <ion-radio class='item item-text-wrap'>{{name}}: {{value}}</ion-radio>
+          <ion-radio class='item item-text-wrap' name='ASA12'>{{name}}: {{value}}</ion-radio>
 
     </label>
 
@@ -165,6 +165,90 @@
 
   </div>
 
+
+<ion-list>
+
+  <ion-item class='item item-text-wrap'>PQRS 76: Prevention of CVC related Bloodstream Infection </ion-item>
+
+</ion-list>
+
+<div ng-repeat='(name, value) in PQRS76'>
+
+  <label class='item item-input'>
+
+    <ion-checkbox class='item item-text-wrap'>{{name}}: {{value}}</ion-checkbox>
+
+  </label>
+
+</div>
+
+
+<ion-list>
+
+  <ion-item class='item item-text-wrap'>PQRS 404: Smoking Abstinence (Age 18 or over; Check all that apply)</ion-item>
+
+</ion-list>
+
+<div ng-repeat='(name, value) in PQRS404'>
+
+  <label class='item item-input'>
+
+    <ion-checkbox class='item item-text-wrap'>{{name}}: {{value}}</ion-checkbox>
+
+  </label>
+
+</div>
+
+
+<ion-list>
+
+  <ion-item class='item item-text-wrap'>PQRS 424: Perioperative Temp. Mgmt (GA or Neuraxial; Check all that apply)</ion-item>
+
+</ion-list>
+
+<div ng-repeat='(name, value) in PQRS424'>
+
+  <label class='item item-input'>
+
+    <ion-checkbox class='item item-text-wrap'>{{name}}: {{value}}</ion-checkbox>
+
+  </label>
+
+</div>
+
+
+<ion-list>
+
+  <ion-item class='item item-text-wrap'>PQRS 426: Transfer of Care to PACU (Check all that apply)</ion-item>
+
+</ion-list>
+
+<div ng-repeat='(name, value) in PQRS404'>
+
+  <label class='item item-input'>
+
+    <ion-checkbox class='item item-text-wrap'>{{name}}: {{value}}</ion-checkbox>
+
+  </label>
+
+</div>
+
+
+<ion-list>
+
+  <ion-item class='item item-text-wrap'>PQRS 427: Post-Anesthetic Transfer of Care (Check all that apply)</ion-item>
+
+</ion-list>
+
+<div ng-repeat='(name, value) in PQRS427'>
+
+  <label class='item item-input'>
+
+    <ion-checkbox class='item item-text-wrap'>{{name}}: {{value}}</ion-checkbox>
+
+  </label>
+
+</div>
 
 
 
