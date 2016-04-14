@@ -45,6 +45,11 @@ angular.module('starter.services', [])
         }
       }
       return null;
+    },
+    // Service to be called when adding patient to list.
+    addPt: function(pt) {
+      console.log('running');
+      chats.push(pt);
     }
   };
 });
