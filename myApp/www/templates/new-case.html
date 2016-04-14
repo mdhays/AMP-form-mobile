@@ -1,5 +1,3 @@
-// The main view for inputting form data.
-
 <ion-view view-title='New Case'>
 
   <ion-content>
@@ -8,7 +6,7 @@
 
       <span class='input-label'> Anesthesiologist: </span>
 
-      <input type='text' name='first'>
+      <input type='text' name='dr' ng-model='user.anesthesiologist'>
 
     </label>
 
@@ -17,7 +15,7 @@
 
       <span class='input-label'> CRNA/AA: </span>
 
-      <input type='text' name='first'>
+      <input type='text' name='crna' ng-model='user.crna'>
 
     </label>
 
@@ -26,7 +24,7 @@
 
       <span class='input-label'> Patient: </span>
 
-      <input type='text' name='patient'>
+      <input type='text' name='patient' ng-model='user.name'>
 
     </label>
 
@@ -35,7 +33,7 @@
 
       <span class='input-label'> Date Of Service: </span>
 
-      <input type='date' name='dos'>
+      <input type='date' name='dos' ng-model='user.dos'>
 
     </label>
 
@@ -44,7 +42,7 @@
 
       <span class='input-label'> MRN: </span>
 
-      <input type='number' name='first'>
+      <input type='number' name='mrn' ng-model='user.mrn'>
 
     </label>
 
@@ -253,7 +251,7 @@
 
   <ion-item href='#/tab/chats'>
 
-    <button class='button button-full' ng-click='addCase()'>
+    <button class='button button-full' ng-click='save(user)'>
       Save
     </button>
 
