@@ -2,17 +2,17 @@
   <ion-content>
     <ion-list>
 
-      <ion-item class="item-remove-animate item-avatar item-icon-left" ng-repeat="chat in chats" type="item-text-wrap" href="#/tab/chats/{{chat.mrn}}">
+      <ion-item class="item-remove-animate item-avatar item-icon-left" ng-repeat="pt in chats" type="item-text-wrap" href="#/tab/chats/{{pt.mrn}}">
 
         <i class='icon ion-clipboard'></i>
 
-        <h2>{{chat.name}}</h2>
+        <h2>{{pt.name}}</h2>
 
-        <p>MRN: {{chat.mrn}}</p>
+        <p>MRN: {{pt.mrn}}</p>
 
-        <p>DOS: {{chat.dos}}</p>
+        <p>DOS: {{pt.dos}}</p>
 
-        <ion-option-button class="button-assertive" ng-click="remove(chat)">
+        <ion-option-button class="button-assertive" ng-click="remove(pt)">
 
           Delete
 

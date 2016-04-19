@@ -4,44 +4,19 @@ angular.module('starter.services', [])
   // Might use a resource here that returns a JSON array
 
   // Some fake testing data
-  var chats = [{
-    mrn: 0,
-    name: 'Ben Sparrow',
-    lastText: 'You on your way?',
-    face: 'img/ben.png'
-  }, {
-    mrn: 1,
-    name: 'Max Lynx',
-    lastText: 'Hey, it\'s me',
-    face: 'img/max.png'
-  }, {
-    mrn: 2,
-    name: 'Adam Bradleyson',
-    lastText: 'I should buy a boat',
-    face: 'img/adam.jpg'
-  }, {
-    mrn: 3,
-    name: 'Perry Governor',
-    lastText: 'Look at my mukluks!',
-    face: 'img/perry.png'
-  }, {
-    mrn: 4,
-    name: 'Mike Harrington',
-    lastText: 'This is wicked good ice cream.',
-    face: 'img/mike.png'
-  }];
+  var pts = [];
 
   return {
     all: function() {
-      return chats;
+      return pts;
     },
-    remove: function(chat) {
-      chats.splice(chats.indexOf(chat), 1);
+    remove: function(pt) {
+      pts.splice(pts.indexOf(pt), 1);
     },
-    get: function(chatId) {
-      for (var i = 0; i < chats.length; i++) {
-        if (chats[i].mrn === parseInt(chatId)) {
-          return chats[i];
+    get: function(ptId) {
+      for (var i = 0; i < pts.length; i++) {
+        if (pts[i].mrn === parseInt(ptId)) {
+          return pts[i];
         }
       }
       return null;
@@ -49,8 +24,8 @@ angular.module('starter.services', [])
     // Service to be called when adding patient to list.
     addPt: function(pt) {
       console.log('running');
-      chats.push(pt);
-      console.log(chats);
+      pts.push(pt);
+      console.log(pts);
     }
   };
 });
