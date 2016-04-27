@@ -21,11 +21,9 @@ angular.module('starter.controllers', [])
   $scope.disabled = true;
 
   $scope.editFields = (function() {
-    console.log('running');
     if ($scope.disabled = true) {
+      console.log('inputs enabled');
       $scope.disabled = false;
-    } else if ($scope.disabled = false) {
-      $scope.disabled = true;
     }
   });
 })
