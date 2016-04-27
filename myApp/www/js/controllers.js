@@ -16,15 +16,19 @@ angular.module('starter.controllers', [])
 })
 
 .controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
+  console.log($stateParams);
   $scope.chat = Chats.get($stateParams.chatId);
+  $scope.disabled = true;
+
+  $scope.editFields = (function() {
+    console.log('running');
+    if ($scope.disabled = true) {
+      $scope.disabled = false;
+    } else if ($scope.disabled = false) {
+      $scope.disabled = true;
+    }
+  });
 })
-
-
-
-
-
-
-
 
 
 

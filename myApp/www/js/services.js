@@ -3,7 +3,7 @@ angular.module('starter.services', [])
 .factory('Chats', function() {
   // Might use a resource here that returns a JSON array
 
-  // Some fake testing data
+  // Container for patients.
   var pts = [];
 
   return {
@@ -26,6 +26,10 @@ angular.module('starter.services', [])
       console.log('running');
       pts.push(pt);
       console.log(pts);
+    },
+    saveChanges: function(pt) {
+      console.log('running');
+      pts.splice(pts.indexOf(pt), 1, pt)
     }
   };
 });
